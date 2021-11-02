@@ -1,0 +1,72 @@
+PartA-ROS机器人操作系统
+=======================
+
+TurtleSim
+---------
+
+运行ROS程序的第一件事：
+
+.. code:: shell
+
+   roscore
+
+首先打开小乌龟节点：
+
+.. code:: shell
+
+   rosrun turtlesim turtlesim_node
+
+打开键盘输入节点：
+
+.. code:: shell
+
+   rosrun turtlesim turtle_teleop_key
+
+打开动态结构图：
+
+.. code:: shell
+
+   rosrun rqt_graph rqt_graph
+
+打开新的Topic，动一下可以发现Topic中发布的内容（线速度、角速度）：
+
+.. code:: 
+
+   rostopic echo /turtle1/cmd_vel
+
+如果不使用键盘输入，直接向话题中发布内容：
+
+.. code:: shell
+
+   rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, 1.8]'
+
+发现乌龟动了动还是停下来，如果想让乌龟连续地移动，需要连续地发送频率为1hz的指令流：
+
+.. code:: shell
+
+   rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -r 1 -- '[2.0, 0.0, 0.0]' '[0.0, 0.0, -1.8]'
+
+在这里可以查看turtlesim发布的位置数据（60hz）：
+
+.. code:: shell
+
+   rostopic echo /turtle1/pose
+
+用这些数据可以绘制图表：
+
+.. code:: 
+
+   rosrun rqt_plot rqt_plot
+
+turtlesim提供了一些服务接口：
+
+.. code:: 
+
+   rosservice call /spawn 2 2 0.2 ""
+
+还可以做很多事，比如把背景换成基佬紫：
+
+.. code:: 
+
+   rosparam set /turtlesim/background_r 150
+   rosservice call /clear

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PartA-ROS机器人操作系统 &mdash; HicoDR  documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="Springboot初识:了解Spring" href="../../backend/springboot1/" />
+    <link rel="prev" title="Fiddler:借助抓包工具写手机APP的Python脚本" href="../fiddler/" />   
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../../blog/atom.xml"
+  title="HicoDR Blog"
+/>
+ 
+<link href="True" rel="stylesheet" />
+
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../" class="icon icon-home"> HicoDR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">简介</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../about/">关于 HicoDR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../first-post/">博客更新计划</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ablog/">我如何创建自己的博客</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">react-native</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../react-native/react-native1/">react-native考察：对比Flutter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../react-native/react-native2/">react-native入门</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../react-native/react-native3/">react-native初识:目录结构与HelloWorld</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../react-native/react-native4/">react-native初识: state 和 props</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../react-native/react-native5/">react-native初识:布局和CSS样式、第三方库的引入</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../react-native/react-native7/">react-native实战:轮播引导和登陆注册</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../react-native/react-native8/">react-native进阶:秒嘀云+Nativebase实现短信验证码登陆</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../react-native/react-native9/">react-native实战:支付宝接入app支付</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../react-native/react-native6/">react-native初识：我使用的组件</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">IOS开发</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ios/react-native10/">react-native:IOS环境搭建</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ios/iosrn/">IOS-RN踩坑记录</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ios/iap/">IOS 内购—奔溃一条龙</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ios/appstore/">IOS AppStore审核七进七出</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">机器学习-大创</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../ml/K-BERT/">K-BERT: Enabling Language Representation with Knowledge Graph</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ml/LXMERT/">LXMERT:Transformers–Learning Cross-Modality Encoder Representations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../ml/VL-BERT/">VL-BERT: Pre-training Of Generic Visuallinguistic Presentations</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Lua脚本</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/touchsprite/">触动精灵-Android自动化测试脚本</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/dota2rpg/">Dota2 RPG Learning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../lua/dota2ai/">Dota2 AI 强化学习</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">杂项</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../bs4/">bs4爬虫实战:全家Family网站攻略</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pythread/">Python多线程：Family数据批量生成</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../openssh/">Paramiko：Python+ssh做快乐网管</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fiddler/">Fiddler:借助抓包工具写手机APP的Python脚本</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PartA-ROS机器人操作系统</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#turtlesim">TurtleSim</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Web 后端</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../backend/springboot1/">Springboot初识:了解Spring</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../">HicoDR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../" class="icon icon-home"></a> &raquo;</li>
+      <li>PartA-ROS机器人操作系统</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/docs/other/ros.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+              <section id="parta-ros">
+<h1>PartA-ROS机器人操作系统<a class="headerlink" href="#parta-ros" title="Permalink to this headline"></a></h1>
+<section id="turtlesim">
+<h2>TurtleSim<a class="headerlink" href="#turtlesim" title="Permalink to this headline"></a></h2>
+<p>运行ROS程序的第一件事：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>roscore
+</pre></div>
+</div>
+<p>首先打开小乌龟节点：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>rosrun turtlesim turtlesim_node
+</pre></div>
+</div>
+<p>打开键盘输入节点：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>rosrun turtlesim turtle_teleop_key
+</pre></div>
+</div>
+<p>打开动态结构图：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>rosrun rqt_graph rqt_graph
+</pre></div>
+</div>
+<p>打开新的Topic，动一下可以发现Topic中发布的内容（线速度、角速度）：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rostopic</span> <span class="n">echo</span> <span class="o">/</span><span class="n">turtle1</span><span class="o">/</span><span class="n">cmd_vel</span>
+</pre></div>
+</div>
+<p>如果不使用键盘输入，直接向话题中发布内容：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>rostopic pub -1 /turtle1/cmd_vel geometry_msgs/Twist -- <span class="s1">&#39;[2.0, 0.0, 0.0]&#39;</span> <span class="s1">&#39;[0.0, 0.0, 1.8]&#39;</span>
+</pre></div>
+</div>
+<p>发现乌龟动了动还是停下来，如果想让乌龟连续地移动，需要连续地发送频率为1hz的指令流：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>rostopic pub /turtle1/cmd_vel geometry_msgs/Twist -r <span class="m">1</span> -- <span class="s1">&#39;[2.0, 0.0, 0.0]&#39;</span> <span class="s1">&#39;[0.0, 0.0, -1.8]&#39;</span>
+</pre></div>
+</div>
+<p>在这里可以查看turtlesim发布的位置数据（60hz）：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>rostopic <span class="nb">echo</span> /turtle1/pose
+</pre></div>
+</div>
+<p>用这些数据可以绘制图表：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosrun</span> <span class="n">rqt_plot</span> <span class="n">rqt_plot</span>
+</pre></div>
+</div>
+<p>turtlesim提供了一些服务接口：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosservice</span> <span class="n">call</span> <span class="o">/</span><span class="n">spawn</span> <span class="mi">2</span> <span class="mi">2</span> <span class="mf">0.2</span> <span class="s2">&quot;&quot;</span>
+</pre></div>
+</div>
+<p>还可以做很多事，比如把背景换成基佬紫：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rosparam</span> <span class="nb">set</span> <span class="o">/</span><span class="n">turtlesim</span><span class="o">/</span><span class="n">background_r</span> <span class="mi">150</span>
+
+<span class="n">rosservice</span> <span class="n">call</span> <span class="o">/</span><span class="n">clear</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+<div class="section">
+   
+</div>
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../fiddler/" class="btn btn-neutral float-left" title="Fiddler:借助抓包工具写手机APP的Python脚本" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../backend/springboot1/" class="btn btn-neutral float-right" title="Springboot初识:了解Spring" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2019, HicoDR.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

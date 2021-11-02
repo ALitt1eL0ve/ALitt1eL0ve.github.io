@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://ALitt1eL0ve.github.io</id>
+  <title>HicoDR Blog</title>
+  <updated>2021-11-02T03:43:15.358839+00:00</updated>
+  <link href="http://ALitt1eL0ve.github.io"/>
+  <link href="http://ALitt1eL0ve.github.io/blog/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.20">ABlog</generator>
+  <entry>
+    <id>http://ALitt1eL0ve.github.io/docs/first-post/</id>
+    <title>博客更新计划</title>
+    <updated>2019-09-04T00:00:00+08:00</updated>
+    <author>
+      <name>HicoderDR</name>
+    </author>
+    <content type="html">&lt;p&gt;Hello World! 我是天猫精灵，咳咳，开个玩笑。&lt;/p&gt;
+</content>
+    <link href="http://ALitt1eL0ve.github.io/docs/first-post/" rel="alternate"/>
+    <summary>Hello World! 我是天猫精灵，咳咳，开个玩笑。</summary>
+    <category term="atag" label="atag"/>
+    <published>2019-09-04T00:00:00+08:00</published>
+  </entry>
+</feed>
